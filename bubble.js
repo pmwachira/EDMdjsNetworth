@@ -117,7 +117,7 @@ function bubble(){
 							                 selection.transition()        
                     							.duration(200)      
                    								 .style("opacity", .85); 
-            								    var string = "<br>"+d[columnForRadius]+" "+unitName+"<br>"+"<img src= "+ d['sign']+" style='height:50px;width:50px;' />";
+            								    var string = "Rank "+d['id']+"<br>"+d[columnForRadius]+" "+unitName+"<br>"+"<img src= "+ d['sign']+" style='height:50px;width:50px;' />";
                									 tooltip.html(string) //this will add the image on mouseover
                 								    .style("left", (d3.event.pageX + 10) + "px")     
                									     .style("top", (d3.event.pageY + 10) + "px");
@@ -159,7 +159,7 @@ function bubble(){
 				                    selection.transition()        
                     							.duration(200)      
                    								 .style("opacity", .85); 
-            								    var string = "<br>"+d[columnForRadius]+" "+unitName+"<br>"+"<img src= "+ d['sign']+" style='height:50px;width:50px;' />";
+            								    var string = "Rank "+d['id']+"<br>"+d[columnForRadius]+" "+unitName+"<br>"+"<img src= "+ d['sign']+" style='height:50px;width:50px;' />";
                									 tooltip.html(string) //this will add the image on mouseover
                 								    .style("left", (d3.event.pageX + 10) + "px")     
                									     .style("top", (d3.event.pageY + 10) + "px");
