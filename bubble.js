@@ -33,12 +33,13 @@ function bubble(){
 		                        .append("div")
 		                        .style("position","absolute")
 		                        .style("visibility","hidden")
-		                        .style("color","white")
+		                        .style("color","black")
 		                        .style("padding","8px")
-		                        .style("background-color", "#626D71")
+		                        .style("background-color", "transparent")
 		                         .style("border-radius", "6px")
 		                         .style("text-align", "center")
 		                         .style("font-family", "monospace")
+		                         .style("font-weight", "900")
 		                         .style("width", "100px")
 		                         .text("");
 
@@ -111,9 +112,19 @@ function bubble(){
 							         
 
 							         .on("mouseover",function(d){
-							                 tooltip.html(d[columnForTitle]+"<br>"+d[columnForRadius]+" "+unitName);
-							                        return tooltip.style("visibility","visible");
+							                 
 
+							                 selection.transition()        
+                    							.duration(200)      
+                   								 .style("opacity", .85); 
+            								    var string = "<br>"+d[columnForRadius]+" "+unitName+"<br>"+"<img src= "+ d['sign']+" style='height:50px;width:50px;' />";
+               									 tooltip.html(string) //this will add the image on mouseover
+                								    .style("left", (d3.event.pageX + 10) + "px")     
+               									     .style("top", (d3.event.pageY + 10) + "px");
+
+							                         return tooltip.style("visibility","visible");
+							                   
+							                        })
 							        .on("mousemove",function(){
 							                         return tooltip.style("top",(d3.event.pageY-10)+"px").style("left",(d3.event.pageX+10)+"px");})
 							         .on("mouseout",function(){ return tooltip.style("visibility","hidden");
