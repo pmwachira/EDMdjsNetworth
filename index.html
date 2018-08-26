@@ -2,13 +2,13 @@
 <head>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.6.0/d3.min.js"></script>
-<script src="bubble.js"></script>
+<script src="/bubble.js"></script>
 </head>
 <body>
 <div class="chart-example" id="chart"><svg></svg></div>
 <script>
 
-d3.csv('data/EDM.csv',function(error, read_data){
+d3.csv('/data/EDM.csv',function(error, read_data){
     if(error){
         console.error('Error parsing data');
         throw error;
