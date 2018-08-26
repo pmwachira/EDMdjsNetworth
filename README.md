@@ -1,8 +1,11 @@
 # D3Visualization of EDMdjsNetworth
-Data Analytic dashboard powered by Python,Javascript, D3JS and MongoDB. Visualized using Flask and web layout template from Keen.io
+Dashboard built by Javascript and D3.js data visualization library.
 
 Data source obtained from http://edminstereo.com/top-edm-djs-net-worth-marshmello-martin-garrix-more/
 
-Hosted on localhost, the below dashboard was developed.
+On Hover dj logos from !Tha Internet!
 
-![alt text](https://github.com/pmwachira/D3Visualization/blob/master/static/img/d3%20%20visualization.PNG)
+Live demo https://pmwachira.github.io/EDMdjsNetworth/bubble.html
+
+
+![alt text](https://github.com/pmwachira/EDMdjsNetworth/blob/master/EDM%20networth%20by%20D3.png)
